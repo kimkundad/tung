@@ -43,13 +43,13 @@
                             
                             
                             <li>
-                                <a href="index.html" class="active">
+                                <a href="index.html" class="">
                                     <span class="nav-icon text-primary"><img class="w-30 " src="image/icon/application.png"></span>
                                     <span class="nav-text">บริการทั้งหมด</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="new_service.html" class="">
+                                <a href="new_service.html" class="active">
                                     <span class="nav-icon text-primary"><img class="w-30 " src="image/icon/new (1).png"></span>
                                     <span class="nav-text">บริการใหม่ล่าสุด</span>
                                 </a>
@@ -171,8 +171,15 @@
                     <div class="page-hero page-container " id="page-hero">
                         <div class="padding text-center">
                             <div class="page-title">
-                                <h2 class="text-md text-highlight">สวัสดีค่ะ คุณ Pablo Nouvelle </h2>
-                                <small class="small_text_index">Pumppang ยินดีให้บริการค่ะ ติดตรงไหนสอบถามทีมงานซัพพอร์ตได้เลยจ้า</small>
+                                
+                                <div class="row justify-content-md-center">
+                                    <div class="col-3">
+                                        <a class="btn_radius btn btn-pum btn-block"><img class="w-25 mar-ri-10" src="image/icon/new (1) copy.png"><b>ใหม่ล่าสุด</b> </a>
+                                    </div>
+                                    <div class="col-3">
+                                        <a class="btn_radius btn btn-white btn-block"><img class="w-25 mar-ri-10" src="image/icon/star copy.png"> <b>ยอดนิยม</b></a>
+                                    </div>
+                                </div>
                             </div>
                             
                         </div>
@@ -180,94 +187,138 @@
                     <div class="page-content page-container" id="page-content">
                         <div class="padding" style="padding-top: 0px;">
                             <div class="row">
-                                <div class="col-6 col-md-2 py-3"><a class="btn_radius btn btn-white btn-block"><img class="w-25 mar-ri-10" src="image/icon/facebook.png"> Facebook</a></div>
-                                <div class="col-6 col-md-2 py-3"><a class="btn_radius btn btn-white btn-block"><img class="w-25 mar-ri-10" src="image/icon/instagram.png"> Instagram</a></div>
-                                <div class="col-6 col-md-2 py-3"><a class="btn_radius btn btn-white btn-block"><img class="w-25 mar-ri-10" src="image/icon/YouTube_full-color_icon_(2017).svg.png"> Youtube</a></div>
-                                <div class="col-6 col-md-2 py-3"><a class="btn_radius btn btn-white btn-block"><img class="w-25 mar-ri-10" src="image/icon/tiktok.png"> Tiktok</a></div>
-                                <div class="col-6 col-md-2 py-3"><a class="btn_radius btn btn-white btn-block"><img class="w-25 mar-ri-10" src="image/icon/line.png"> Line OA</a></div>
-                                <div class="col-6 col-md-2 py-3"><a class="btn_radius btn btn-white btn-block"><img class="w-25 mar-ri-10" src="image/icon/twitter-squared.png"> Twitter</a></div>
-                                <div class="col-6 col-md-2 py-3"><a class="btn_radius btn btn-white btn-block"><img class="w-25 mar-ri-10" src="image/icon/kUv1OvC64S.png"> Google</a></div>
-                                <div class="col-6 col-md-2 py-3"><a class="btn_radius btn btn-white btn-block"><img class="w-25 mar-ri-10" src="image/icon/shopee-1-1024x1024.png"> Shopee</a></div>
-
-                                <div class="col-6 col-md-2 py-3"><a class="btn_radius btn btn-white btn-block"><img class="w-25 mar-ri-10" src="image/icon/Glossy-Spotify-logo-PNG.png"> Spotify</a></div>
-                                <div class="col-6 col-md-2 py-3"><a class="btn_radius btn btn-white btn-block"><img class="w-25 mar-ri-10" src="image/icon/87y82117uhc61.webp"> Discord</a></div>
-                                <div class="col-6 col-md-2 py-3"><a class="btn_radius btn btn-white btn-block"><img class="w-25 mar-ri-10" src="image/icon/Netflix-N-Logo-PNG-Photos.png"> Netflix</a></div>
-                                <div class="col-6 col-md-2 py-3"><a class="btn_radius btn btn-white btn-block"><img class="w-25 mar-ri-10" src="image/icon/application.png"> เพิ่มเติม</a></div>
 
                                 <div class="col-12">
                                     <div class="card card_pung">
                                         <div class="card-body">
 
-                                            <div class="row">
-                                                <div class="col-6 col-md-3 py-3"><a class="btn_radius btn btn-white btn-block"><img class="w-25 mar-ri-10" src="image/icon/add-to-cart.png"> เลือกซื้อ</a></div>
-                                                <div class="col-6 col-md-3 py-3"><a class="btn_radius btn btn-white btn-block"><img class="w-25 mar-ri-10" src="image/icon/checkout.png"> คำสั่งซื้อก่อนหน้า</a></div>
-                                                <div class="col-6 col-md-3 py-3"><a class="btn_radius btn btn-white btn-block"><img class="w-25 mar-ri-10" src="image/icon/star.png"> รายการโปรด</a></div>
-                                                <div class="col-6 col-md-3 py-3"><a class="btn_radius btn btn-white btn-block"><img class=" mar-ri-10" style="height: 25px;" src="image/icon/searching-bar.png"> ป้อน ID</a></div>
+                                            <div class="toolbar ">
+                                                <form class="flex">
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control form-control-theme form-control-sm search" placeholder="Search" required>
+                                                        <span class="input-group-append" style="border: 1px solid #e5dede;">
+                                                            <button class="btn btn-white no-border btn-sm" type="button">
+                                                            <span class="d-flex text-muted"><i data-feather="search"></i></span>
+                                                        </button>
+                                                        </span>
+                                                    </div>
+                                                </form>
                                             </div>
-                                            <div class="row">
-
-                                                <div class="col-12 col-md-6">
-                                                    <div class="form-group row">
-                                                        <div class="col-sm-12">
-                                                            <label class="font-label col-form-label"><img class="w-25 mar-ri-10" src="image/icon/list-option.png"> หมวดหมู่</label>
-                                                            <select class="form-rad form-control">
-                                                                <option>ถูกใจแฟนเพจ Facebook</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group row">
-                                                        <div class="col-sm-12">
-                                                            <label class="font-label col-form-label"><img class="w-25 mar-ri-10" src="image/icon/social-media.png"> หมวดหมู่</label>
-                                                            <select class="form-rad form-control">
-                                                                <option>บริการ</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group row">
-                                                        <div class="col-sm-12">
-                                                            <label class="font-label col-form-label"><img class="w-25 mar-ri-10" src="image/icon/link.png"> ลิงค์</label>
-                                                            <select class="form-rad form-control">
-                                                                <option>URL Website</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group row">
-                                                        <div class="col-sm-12">
-                                                            <label class="font-label col-form-label"><img class="w-25 mar-ri-10" src="image/icon/density.png"> ปริมาณ</label>
-                                                            <input type="text" class="form-rad form-control ">
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group row">
-                                                        <div class="col-sm-12">
-                                                            <label class="font-label col-form-label"><img class="w-25 mar-ri-10" src="image/icon/money.png"> ค่าบริการ</label>
-                                                            <div class="input-group mb-3">
-                                                                <input type="text" class="form-rad form-control" >
-                                                                <div class="input-group-append">
-                                                                    <span class="input-group-text" id="basic-addon2">บาท</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="col-12">
-                                                            <div class="alert_pung alert alert-danger" role="alert">
-                                                                *ข้อแนะนำ* โปรดมั่นใจว่าลิงค์ของคุณเปิด "สาธารณะ" ทุกครั้งก่อนกดสั่งซื้อ!
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-6">
-                                                            <a class="btn_radius btn btn-pum btn-block"><img class="w-25 mar-ri-10" src="image/icon/add-to-cart.png"><b>เลือกซื้อ</b> </a>
-                                                        </div>
-                                                        <div class="col-6">
-                                                            <a class="btn_radius btn btn-white btn-block"><img class="w-25 mar-ri-10" src="image/icon/wallet.png"> <b>เลือกซื้อ</b></a>
-                                                        </div>
-                                                    </div>
-                                                    <br><br>
-
-                                                </div>
-                                                <div class="col-12 col-md-6">
-                                                    <iframe style="width: 100%;" height="315" src="https://www.youtube.com/embed/cAKL5hp2xt0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                                </div>
-
+                                            <div class="table-responsive">
+                                                <table class="table table-theme table-row v-middle">
+                                                    <thead>
+                                                        <tr>
+                                                            <th class="text-muted sortable" data-toggle-class="asc">หมายเลข ID</th>
+                                                            <th class="text-muted">บริการ</th>
+                                                            <th class="text-muted" style="width:50px;">ราคา</th>
+                                                            <th class="text-muted text-right">คำอธิบาย</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr class=" v-middle" data-id="9">
+                                                            <td>
+                                                                <span class="item-amount">4003</span>
+                                                            </td>
+                                                            <td>
+                                                                <div class="item-title">เพิ่มผู้ติดตาม Instagram</div>
+                                                            </td>
+                                                            <td>
+                                                                <span class="item-amount">390</span>
+                                                            </td>
+                                                            <td class="text-right">
+                                                                <a class="btn_radius btn btn-pum btn-sm"><img class="w-20 mar-ri-10" src="image/icon/info.png"><b>ดูคำอธิบาย</b> </a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class=" v-middle" data-id="9">
+                                                            <td>
+                                                                <span class="item-amount">4003</span>
+                                                            </td>
+                                                            <td>
+                                                                <div class="item-title">เพิ่มผู้ติดตาม Instagram</div>
+                                                            </td>
+                                                            <td>
+                                                                <span class="item-amount">390</span>
+                                                            </td>
+                                                            <td class="text-right">
+                                                                <a class="btn_radius btn btn-pum btn-sm"><img class="w-20 mar-ri-10" src="image/icon/info.png"><b>ดูคำอธิบาย</b> </a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class=" v-middle" data-id="9">
+                                                            <td>
+                                                                <span class="item-amount">4003</span>
+                                                            </td>
+                                                            <td>
+                                                                <div class="item-title">เพิ่มผู้ติดตาม Instagram</div>
+                                                            </td>
+                                                            <td>
+                                                                <span class="item-amount">390</span>
+                                                            </td>
+                                                            <td class="text-right">
+                                                                <a class="btn_radius btn btn-pum btn-sm"><img class="w-20 mar-ri-10" src="image/icon/info.png"><b>ดูคำอธิบาย</b> </a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class=" v-middle" data-id="9">
+                                                            <td>
+                                                                <span class="item-amount">4003</span>
+                                                            </td>
+                                                            <td>
+                                                                <div class="item-title">เพิ่มผู้ติดตาม Instagram</div>
+                                                            </td>
+                                                            <td>
+                                                                <span class="item-amount">390</span>
+                                                            </td>
+                                                            <td class="text-right">
+                                                                <a class="btn_radius btn btn-pum btn-sm"><img class="w-20 mar-ri-10" src="image/icon/info.png"><b>ดูคำอธิบาย</b> </a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class=" v-middle" data-id="9">
+                                                            <td>
+                                                                <span class="item-amount">4003</span>
+                                                            </td>
+                                                            <td>
+                                                                <div class="item-title">เพิ่มผู้ติดตาม Instagram</div>
+                                                            </td>
+                                                            <td>
+                                                                <span class="item-amount">390</span>
+                                                            </td>
+                                                            <td class="text-right">
+                                                                <a class="btn_radius btn btn-pum btn-sm"><img class="w-20 mar-ri-10" src="image/icon/info.png"><b>ดูคำอธิบาย</b> </a>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="d-flex">
+                                                <ul class="pagination">
+                                                    <li class="page-item disabled">
+                                                        <a class="page-link" href="#" aria-label="Previous">
+                                                            <span aria-hidden="true">&laquo;</span>
+                                                            <span class="sr-only">Previous</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="page-item active">
+                                                        <a class="page-link" href="#">1 <span class="sr-only">(current)</span></a>
+                                                    </li>
+                                                    <li class="page-item">
+                                                        <a class="page-link" href="#">2</a>
+                                                    </li>
+                                                    <li class="page-item">
+                                                        <a class="page-link" href="#">3</a>
+                                                    </li>
+                                                    <li class="page-item">
+                                                        <a class="page-link" href="#">4</a>
+                                                    </li>
+                                                    <li class="page-item">
+                                                        <a class="page-link" href="#">5</a>
+                                                    </li>
+                                                    <li class="page-item">
+                                                        <a class="page-link" href="#" aria-label="Next">
+                                                            <span aria-hidden="true">&raquo;</span>
+                                                            <span class="sr-only">Next</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                                <small class="text-muted py-2 mx-2">Total <span id="count">15</span> items</small>
                                             </div>
 
                                         </div>
