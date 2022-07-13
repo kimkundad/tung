@@ -172,13 +172,21 @@
                         <div class="padding text-center">
                             <div class="page-title">
                                 
-                                <div class="row justify-content-center">
-                                    <div class="col-6 col-md-3 ">
-                                        <a class="btn_radius btn btn-pum btn-block"><img class="w-25 mar-ri-10" src="image/icon/new (1) copy.png"><b>ใหม่ล่าสุด</b> </a>
+                                <div class="row">
+                                    <div class="col-6 ">
+                                        <form class="flex">
+                                            <div class="input-group">
+                                                <span class="set_border input-group-append" >
+                                                <button class="btn btn-white no-border btn-sm" type="button" style="padding: 0.1rem 0.5rem;">
+                                                    <span class="d-flex text-muted"><img class="w-25 mar-ri-10" src="image/icon/search.png"></span>
+                                                </button>
+                                                </span>
+                                                <input type="text" class="none-bor form-control form-control-theme form-control-sm search" placeholder="ค้นหา" required>
+                                                
+                                            </div>
+                                        </form>
                                     </div>
-                                    <div class="col-6 col-md-3">
-                                        <a class="btn_radius btn btn-white btn-block"><img class="w-25 mar-ri-10" src="image/icon/star copy.png"> <b>ยอดนิยม</b></a>
-                                    </div>
+                                    
                                 </div>
                             </div>
                             
@@ -192,31 +200,34 @@
                                     <div class="card card_pung">
                                         <div class="card-body">
 
-                                            <div class="toolbar ">
-                                                <form class="flex">
-                                                    <div class="input-group">
-                                                        <span class="set_border input-group-append" >
-                                                        <button class="btn btn-white no-border btn-sm" type="button" style="padding: 0.1rem 0.5rem;">
-                                                            <span class="d-flex text-muted"><img class="w-25 mar-ri-10" src="image/icon/search.png"></span>
-                                                        </button>
-                                                        </span>
-                                                        <input type="text" class="none-bor form-control form-control-theme form-control-sm search" placeholder="ค้นหา" required>
-                                                        
-                                                    </div>
-                                                </form>
+                                            <div class="d-flex">
+                                                <div class="item_head_icon"><a class="btn_radius btn btn-white btn-block" href="order.html"><img class="w-25 mar-ri-10" src="image/icon/shopping-cart.png"> ทั้งหมด</a></div>
+                                                <div class="item_head_icon"><a class="btn_radius btn btn-pum btn-block" href="pending.html"><img class="w-25 mar-ri-10" src="image/icon/loading.png"> รอดำเนินการ</a></div>
+                                                <div class="item_head_icon"><a class="btn_radius btn btn-white btn-block" href="inprogress.html"><img class="w-25 mar-ri-10" src="image/icon/checklist.png"> กำลังดำเนินการ</a></div>
+                                                <div class="item_head_icon"><a class="btn_radius btn btn-white btn-block" href="order_succeed.html"><img class="w-25 mar-ri-10" src="image/icon/check copy.png"> สำเร็จ</a></div>
+                                                <div class="item_head_icon"><a class="btn_radius btn btn-white btn-block" href="order_cancel.html"><img class="w-25 mar-ri-10" src="image/icon/cancel copy.png"> ยกเลิก</a></div>
                                             </div>
                                             <div class="table-responsive">
                                                 <table class="table table-theme table-row v-middle">
                                                     <thead>
                                                         <tr>
-                                                            <th class="text-muted sortable" data-toggle-class="asc">หมายเลข ID</th>
-                                                            <th class="text-muted">บริการ</th>
+                                                            <th class="text-muted sortable" data-toggle-class="asc">วันที่สั่งซื้อ</th>
+                                                            <th class="text-muted">หมายเลขคำสั่งซื้อ</th>
+                                                            <th class="text-muted">หมายเลข ID</th>
+                                                            <th class="text-muted">ชื่อบริการ</th>
                                                             <th class="text-muted" style="width:50px;">ราคา</th>
-                                                            <th class="text-muted text-right">คำอธิบาย</th>
+                                                            <th class="text-muted text-right">สถานะ</th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
+
                                                         <tr class=" v-middle" data-id="9">
+                                                            <td>
+                                                                <span class="item-amount">24/05/65</span>
+                                                            </td>
+                                                            <td>
+                                                                <span class="item-amount">3281204</span>
+                                                            </td>
                                                             <td>
                                                                 <span class="item-amount">4003</span>
                                                             </td>
@@ -227,10 +238,17 @@
                                                                 <span class="item-amount">390</span>
                                                             </td>
                                                             <td class="text-right">
-                                                                <a class="btn_radius btn btn-pum btn-sm" href="service_detail.html"><img class="w-20 mar-ri-10" src="image/icon/info.png"><b>ดูคำอธิบาย</b> </a>
+                                                                <a class="btn_radius btn btn-white btn-sm" href="service_detail.html"><img class="w-20 mar-ri-10" src="image/icon/loading.png"><b>รอดำเนินการ</b> </a>
+                                                                <a class="btn_radius btn btn-raised btn-sm btn-wave red text-white">ยกเลิกคำสั่งซื้อ</a>
                                                             </td>
                                                         </tr>
                                                         <tr class=" v-middle" data-id="9">
+                                                            <td>
+                                                                <span class="item-amount">24/05/65</span>
+                                                            </td>
+                                                            <td>
+                                                                <span class="item-amount">3281204</span>
+                                                            </td>
                                                             <td>
                                                                 <span class="item-amount">4003</span>
                                                             </td>
@@ -241,10 +259,17 @@
                                                                 <span class="item-amount">390</span>
                                                             </td>
                                                             <td class="text-right">
-                                                                <a class="btn_radius btn btn-pum btn-sm" href="service_detail.html"><img class="w-20 mar-ri-10" src="image/icon/info.png"><b>ดูคำอธิบาย</b> </a>
+                                                                <a class="btn_radius btn btn-white btn-sm" href="service_detail.html"><img class="w-20 mar-ri-10" src="image/icon/loading.png"><b>รอดำเนินการ</b> </a>
+                                                                <a class="btn_radius btn btn-raised btn-sm btn-wave red text-white">ยกเลิกคำสั่งซื้อ</a>
                                                             </td>
                                                         </tr>
                                                         <tr class=" v-middle" data-id="9">
+                                                            <td>
+                                                                <span class="item-amount">24/05/65</span>
+                                                            </td>
+                                                            <td>
+                                                                <span class="item-amount">3281204</span>
+                                                            </td>
                                                             <td>
                                                                 <span class="item-amount">4003</span>
                                                             </td>
@@ -255,10 +280,17 @@
                                                                 <span class="item-amount">390</span>
                                                             </td>
                                                             <td class="text-right">
-                                                                <a class="btn_radius btn btn-pum btn-sm" href="service_detail.html"><img class="w-20 mar-ri-10" src="image/icon/info.png"><b>ดูคำอธิบาย</b> </a>
+                                                                <a class="btn_radius btn btn-white btn-sm" href="service_detail.html"><img class="w-20 mar-ri-10" src="image/icon/loading.png"><b>รอดำเนินการ</b> </a>
+                                                                <a class="btn_radius btn btn-raised btn-sm btn-wave red text-white">ยกเลิกคำสั่งซื้อ</a>
                                                             </td>
                                                         </tr>
                                                         <tr class=" v-middle" data-id="9">
+                                                            <td>
+                                                                <span class="item-amount">24/05/65</span>
+                                                            </td>
+                                                            <td>
+                                                                <span class="item-amount">3281204</span>
+                                                            </td>
                                                             <td>
                                                                 <span class="item-amount">4003</span>
                                                             </td>
@@ -269,10 +301,17 @@
                                                                 <span class="item-amount">390</span>
                                                             </td>
                                                             <td class="text-right">
-                                                                <a class="btn_radius btn btn-pum btn-sm" href="service_detail.html"><img class="w-20 mar-ri-10" src="image/icon/info.png"><b>ดูคำอธิบาย</b> </a>
+                                                                <a class="btn_radius btn btn-white btn-sm" href="service_detail.html"><img class="w-20 mar-ri-10" src="image/icon/loading.png"><b>รอดำเนินการ</b> </a>
+                                                                <a class="btn_radius btn btn-raised btn-sm btn-wave red text-white">ยกเลิกคำสั่งซื้อ</a>
                                                             </td>
                                                         </tr>
                                                         <tr class=" v-middle" data-id="9">
+                                                            <td>
+                                                                <span class="item-amount">24/05/65</span>
+                                                            </td>
+                                                            <td>
+                                                                <span class="item-amount">3281204</span>
+                                                            </td>
                                                             <td>
                                                                 <span class="item-amount">4003</span>
                                                             </td>
@@ -283,9 +322,12 @@
                                                                 <span class="item-amount">390</span>
                                                             </td>
                                                             <td class="text-right">
-                                                                <a class="btn_radius btn btn-pum btn-sm" href="service_detail.html"><img class="w-20 mar-ri-10" src="image/icon/info.png"><b>ดูคำอธิบาย</b> </a>
+                                                                <a class="btn_radius btn btn-white btn-sm" href="service_detail.html"><img class="w-20 mar-ri-10" src="image/icon/loading.png"><b>รอดำเนินการ</b> </a>
+                                                                <a class="btn_radius btn btn-raised btn-sm btn-wave red text-white">ยกเลิกคำสั่งซื้อ</a>
                                                             </td>
                                                         </tr>
+                                                       
+                                                        
                                                     </tbody>
                                                 </table>
                                             </div>
