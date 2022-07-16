@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="assets/css/theme.css" type="text/css" />
         <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
         <link rel="stylesheet" href="assets/css/pum.css" type="text/css" />
+        <link rel="stylesheet" href="font-awesome/css/font-awesome.css" />
         <!-- endbuild -->
     </head>
     <body class="layout-row ">
@@ -60,7 +61,7 @@
                                     <span class="nav-text">คำสั้งซื้อ</span>
                                 </a>
                             </li>
-                            <li>
+                            <li class="active">
                                 <a href="wallet.html" class="">
                                     <span class="nav-icon text-primary"><img class="w-30 " src="image/icon/wallet.png"></span>
                                     <span class="nav-text">เติมปัง</span>
@@ -180,10 +181,10 @@
                                 <br>
                                 <div class="row justify-content-center">
                                     <div class="col-12 col-md-4">
-                                        <a class="btn_radius btn btn-pum pad-buy btn-block mar-b-10px" ><img class="w-25 mar-ri-10" src="image/icon/wallet.png">เติมปัง </a>
+                                        <a class="btn_radius btn btn-pum pad-buy btn-block mar-b-10px" href="wallet.html" ><img class="w-25 mar-ri-10" src="image/icon/wallet.png">เติมปัง </a>
                                     </div>
                                     <div class="col-12 col-md-4">
-                                        <a class="btn_radius btn btn-white pad-buy btn-block mar-b-10px" ><img class="w-25 mar-ri-10" src="image/icon/fees.png">ประวัติการเติมปัง </a>
+                                        <a class="btn_radius btn btn-white pad-buy btn-block mar-b-10px" href="wallet_history.html" ><img class="w-25 mar-ri-10" src="image/icon/fees.png">ประวัติการเติมปัง </a>
                                     </div>
                                 </div>
                             </div>
@@ -204,7 +205,7 @@
                                                         
                                                         <div class="col-sm-12">
                                                             <label class="label-font-big col-form-label">เลือกช่องทาง</label>
-                                                            <select id="example" name="currency" class="form-control">
+                                                            <select id="example" name="payment" class="payments form-control" >
                                                                 <option value="0" data-icon="image/icon/credit.png"> เลือกช่องทาง </option>
                                                                 <option value="1" data-icon="image/icon/unnamed.png"> ทรูมันนี่ วอลเล็ต </option>
                                                                 <option value="2" data-icon="image/icon/qr-code.png"> โอนเงิน สแกน QR Code </option>
@@ -222,11 +223,16 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-12">
+                                                    <br>
                                                     <div class="card card_pung">
                                                         <div class="card-body">
                                                             <p>วิธีการเติมเงิน <br>
                                                             รายละเอียดวิธีการเติมเงิน เปลี่ยนแปลงตามลช่องทางการเติมเงิน ( ดูตัวอย่างจาก ssm-th.com ได้เลย)</p>
                                                         </div>
+                                                    </div>
+                                                    <div class="text-center">
+                                                        <br>
+                                                        <a class="btn_radius btn btn-pum pad-buy" id="mybtn"><img class="w-25 mar-ri-10" src="image/icon/wallet.png"><b>เติมปัง</b> </a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -251,6 +257,155 @@
                 </div>
             </div>
             <!-- ############ Footer END-->
+
+            <!-- .modal -->
+            <div id="modal-backdrop1" class="modal fade" data-backdrop="false">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content box-shadow">
+                        <div class="modal-body">
+
+                            <div class="d-flex">
+                                <div>
+                                    <img class="f-icon-true" src="image/icon/new (1).png">
+                                </div>
+                                <div>
+                                    <div>หมายเลขการซื้อขาย: 356241</div>
+                                    <small class="text-muted">ข้อมูลสินค้าหรือบริการ: เติมเงินคงเหลือ (Type123456)</small>
+                                </div>
+                                <span class="flex"></span>
+                                <div>
+                                    <h5>ยอดชำระ : <button class="btn w-sm mb-1 btn-md-kim btn-outline-danger">1,000 บาท</button></h5>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="modal-body bg-orage">
+                            <div class="d-flex">
+                                <div>
+                                    <img class="t-icon-true" src="image/icon/true_m.png">
+                                </div>
+                                <span class="flex"></span>
+                                <div>
+                                    <h5 style="margin-top: 10px;"> <a href="#" data-dismiss="modal" class="back_icon_true"><i class="fa fa-angle-left" aria-hidden="true"></i> กลับ</a></h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-body">
+                           
+                            <div class="row ">
+                                <div class="col-md-6 text-center">
+                                    <img class="img-fluid" src="image/icon/73651e28a.jpg">
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="modal_pad_kim">
+                                        <h6>เลือกชำระเงินผ่านระบบ TrueMoney โปรดใส่เบอร์โทรของท่าน เพื่อยืนยันการชำระเงิน</h6>
+                                        <div class="form-group row">
+                                            <div class="col-sm-12">
+                                                <input type="text" class="form-control" placeholder="โปรดใส่เบอร์โทร">
+                                            </div>
+                                        </div>
+                                        <div class="input-group mb-3">
+                                            <input type="text" class="form-control" placeholder="โปรดใส่รหัส OTP" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                            <div class="input-group-append block_orage">
+                                                <button class="btn btn-outline-secondary" type="button" style="color: #fff;">รับรหัส OPT</button>
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <button class="block_orage btn btn-white btn-md btn-block">
+                                                ยืนยันชำระเงิน
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <hr>
+                                    <button type="button" class="btn btn-sm btn-light pull-right" data-dismiss="modal">ปิด</button>
+                                </div>
+                            </div>
+                         
+                        </div>
+                    </div>
+                    <!-- /.modal-content -->
+                </div>
+            </div>
+            <!-- / .modal -->
+            <!-- .modal -->
+            <div id="modal-backdrop2" class="modal fade" data-backdrop="false">
+                <div class="modal-dialog ">
+                    <div class="modal-content box-shadow">
+                        <div class="modal-header ">
+                            <button class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body text-center">
+                            <img class="img-fluid set_h_img" src="image/icon/qrcode.webp">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-sm btn-light" data-dismiss="modal">ปิด</button>
+                        </div>
+                    </div>
+                    <!-- /.modal-content -->
+                </div>
+            </div>
+            <!-- / .modal -->
+            <!-- .modal -->
+            <div id="modal-backdrop3" class="modal fade" data-backdrop="false">
+                <div class="modal-dialog ">
+                    
+                    <div class="modal-content box-shadow">
+                        <div class="modal-header line_bot" >
+                            <div class="modal-title text-md">บัตรเดบิต / เครดิต</div>
+                            <button class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="p-4 " style="padding-top: 0px;">
+                                <div class="text-center">
+                                    <strong >Payment Card : <img class="pay_card" src="image/icon/cards.png"></strong> 
+                                </div>
+                                <hr>
+                                <div class="form-group">
+                                    <label class="text-muted">Card Number</label>
+                                    <input type="text" class="form-control" placeholder="Card Number">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label class="text-muted">Expiry Date(mm/YYYY)</label>
+                                    <select class="form-control">
+                                        <option>MM</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <select class="form-control">
+                                        <option>YYYY</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label class="text-muted">CVV</label>
+                                    <input type="text" class="form-control" placeholder="CVV">
+                                </div>
+                                <button class="btn btn-raised btn-wave mb-2  red text-white btn-block">Pay Now 1,0000 THB</button>
+                                <button class="btn  mb-1 btn-outline-dark btn-block" data-dismiss="modal">Cancel</button>
+                                <div class="text-center">
+                                    <br>
+                                    <img style="height:35px" src="image/icon/1657994456512.jpg"></strong> 
+                                </div>
+                                <hr>
+                                <button type="button" class="btn btn-sm btn-light pull-right" data-dismiss="modal">ปิด</button>
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <!-- /.modal-content -->
+                </div>
+            </div>
+            <!-- / .modal -->
+
         </div>
         <!-- build:js assets/js/site.min.js -->
         <!-- jQuery -->
@@ -259,12 +414,9 @@
         <script src="libs/popper.js/dist/umd/popper.min.js"></script>
         <script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
         <!-- ajax page -->
-        <script src="libs/pjax/pjax.min.js"></script>
-        <script src="assets/js/ajax.js"></script>
+      
         <!-- lazyload plugin -->
-        <script src="assets/js/lazyload.config.js"></script>
-        <script src="assets/js/lazyload.js"></script>
-        <script src="assets/js/plugin.js"></script>
+
         <!-- scrollreveal -->
         <script src="libs/scrollreveal/dist/scrollreveal.min.js"></script>
         <!-- feathericon -->
@@ -278,18 +430,33 @@
 
         <script>
             $('#example').IconSelectBox(true); // isImg: boolean 
-            $('#example2').IconSelectBox(false); // isImg: boolean 
+            
+            var value = document.getElementById("get_id_first").value;
+            console.log('-----', value)
             $(document).ready(function(){
-                        // Basic
-                        $('.dropify').dropify({
-                            messages: {
-                            'default': 'คลิกเพื่อเลือกไฟล์ / รูปภาพ',
-                            'replace': 'Drag and drop or click to replace',
-                            'remove':  'ลบ',
-                            'error':   'Ooops, something wrong happended.'
-            }
-                        });
+
+                $('.example-a li').on('click', function() {
+                    value = $(this).attr("data-value")
+                    console.log(value);
+                });
+
+            $("#mybtn").on('click', function() {
+                console.log(value);
+                if(value == 1){
+                    $("#modal-backdrop1").modal("show");
+                }
+                if(value == 2){
+                    $("#modal-backdrop2").modal("show");
+                }
+                if(value == 3){
+                    $("#modal-backdrop3").modal("show");
+                }
+
             });
+
+        });
+
+
         </script>
     </body>
 </html>

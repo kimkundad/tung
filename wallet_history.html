@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="assets/css/theme.css" type="text/css" />
         <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
         <link rel="stylesheet" href="assets/css/pum.css" type="text/css" />
+        <link rel="stylesheet" href="font-awesome/css/font-awesome.css" />
         <!-- endbuild -->
     </head>
     <body class="layout-row ">
@@ -49,18 +50,18 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="new_service.html" >
+                                <a href="new_service.html" class="active">
                                     <span class="nav-icon text-primary"><img class="w-30 " src="image/icon/new (1).png"></span>
                                     <span class="nav-text">บริการใหม่ล่าสุด</span>
                                 </a>
                             </li>
-                            <li class="active">
+                            <li>
                                 <a href="order.html" class="">
                                     <span class="nav-icon text-primary"><img class="w-30 " src="image/icon/shopping-cart.png"></span>
                                     <span class="nav-text">คำสั้งซื้อ</span>
                                 </a>
                             </li>
-                            <li>
+                            <li class="active">
                                 <a href="wallet.html" class="">
                                     <span class="nav-icon text-primary"><img class="w-30 " src="image/icon/wallet.png"></span>
                                     <span class="nav-text">เติมปัง</span>
@@ -172,22 +173,20 @@
                         <div class="padding text-center">
                             <div class="page-title">
                                 
-                                <div class="row">
-                                    <div class=" col-md-6">
-                                        <form class="flex">
-                                            <div class="input-group">
-                                                <span class="set_border input-group-append" >
-                                                <button class="btn btn-white no-border btn-sm" type="button" style="padding: 0.1rem 0.5rem;">
-                                                    <span class="d-flex text-muted"><img class="w-25 mar-ri-10" src="image/icon/search.png"></span>
-                                                </button>
-                                                </span>
-                                                <input type="text" class="none-bor form-control form-control-theme form-control-sm search" placeholder="ค้นหา" required>
-                                                
-                                            </div>
-                                        </form>
+                                <div class="row justify-content-center">
+                                    <div class="col-12 col-md-6">
+                                        <a class="btn_radius btn btn-pum pad-buy " ><img class="w-25 mar-ri-10" src="image/icon/credit.png"><b>ปังคงเหลือ 1,282 ปัง</b> </a>
                                     </div>
                                 </div>
-                                
+                                <br>
+                                <div class="row justify-content-center">
+                                    <div class="col-12 col-md-4">
+                                        <a class="btn_radius btn btn-white pad-buy btn-block mar-b-10px" href="wallet.html" ><img class="w-25 mar-ri-10" src="image/icon/wallet.png">เติมปัง </a>
+                                    </div>
+                                    <div class="col-12 col-md-4">
+                                        <a class="btn_radius btn btn-pum pad-buy btn-block mar-b-10px" href="wallet_history.html"><img class="w-25 mar-ri-10" src="image/icon/fees.png">ประวัติการเติมปัง </a>
+                                    </div>
+                                </div>
                             </div>
                             
                         </div>
@@ -200,134 +199,140 @@
                                     <div class="card card_pung">
                                         <div class="card-body">
 
-                                            
                                             <div class="table-responsive">
-                                                <div class="d-flex">
-                                                    <div class="item_head_icon"><a class="tb_btn btn_radius btn btn-white btn-block" href="order.html"><img class="w-25 mar-ri-10" src="image/icon/shopping-cart.png"> ทั้งหมด</a></div>
-                                                    <div class="item_head_icon"><a class="tb_btn min-w-btn btn_radius btn btn-pum btn-block" href="pending.html"><img class="w-25 mar-ri-10" src="image/icon/loading.png"> รอดำเนินการ</a></div>
-                                                    <div class="item_head_icon"><a class="tb_btn min-w-btn2 btn_radius btn btn-white btn-block" href="inprogress.html"><img class="w-25 mar-ri-10" src="image/icon/checklist.png"> กำลังดำเนินการ</a></div>
-                                                    <div class="item_head_icon"><a class="tb_btn btn_radius btn btn-white btn-block" href="order_succeed.html"><img class="w-25 mar-ri-10" src="image/icon/check copy.png"> สำเร็จ</a></div>
-                                                    <div class="item_head_icon"><a class="tb_btn btn_radius btn btn-white btn-block" href="order_cancel.html"><img class="w-25 mar-ri-10" src="image/icon/cancel copy.png"> ยกเลิก</a></div>
-                                                </div>
+                                                
+                                                
                                                 <table class="table table-theme table-row v-middle">
                                                     <thead>
                                                         <tr>
-                                                            <th class="text-muted sortable" data-toggle-class="asc">วันที่สั่งซื้อ</th>
-                                                            <th class="text-muted">หมายเลขคำสั่งซื้อ</th>
+                                                            <th class="text-muted sortable" data-toggle-class="asc">วันที่</th>
                                                             <th class="text-muted">หมายเลข ID</th>
-                                                            <th class="text-muted">ชื่อบริการ</th>
-                                                            <th class="text-muted" style="width:50px;">ราคา</th>
-                                                            <th class="text-muted text-right">สถานะ</th>
+                                                            <th class="text-muted">ช่องทาง</th>
+                                                            <th class="text-muted" >จำนวนเงิน (บาท)</th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
 
                                                         <tr class=" v-middle" data-id="9">
                                                             <td>
-                                                                <span class="item-amount">24/05/65</span>
+                                                                <span class="item-amount">24/05/65 (12:27:15)</span>
                                                             </td>
                                                             <td>
                                                                 <span class="item-amount">3281204</span>
                                                             </td>
                                                             <td>
-                                                                <span class="item-amount">4003</span>
+                                                                <div class="item-title">โอนเงิน (สแกน QR Code)</div>
                                                             </td>
                                                             <td>
-                                                                <div class="item-title">เพิ่มผู้ติดตาม Instagram</div>
+                                                                <span class="item-amount">390.00</span>
                                                             </td>
-                                                            <td>
-                                                                <span class="item-amount">390</span>
-                                                            </td>
-                                                            <td class="text-right">
-                                                                <a class="btn_radius btn btn-white btn-sm" href="service_detail.html"><img class="w-20 mar-ri-10" src="image/icon/loading.png"><b>รอดำเนินการ</b> </a>
-                                                                <a class="btn_radius btn btn-raised btn-sm btn-wave red text-white">ยกเลิกคำสั่งซื้อ</a>
-                                                            </td>
+                                                            
                                                         </tr>
                                                         <tr class=" v-middle" data-id="9">
                                                             <td>
-                                                                <span class="item-amount">24/05/65</span>
+                                                                <span class="item-amount">24/05/65 (12:27:15)</span>
                                                             </td>
                                                             <td>
                                                                 <span class="item-amount">3281204</span>
                                                             </td>
                                                             <td>
-                                                                <span class="item-amount">4003</span>
+                                                                <div class="item-title">ทรูมันนี่ วอลเล็ท</div>
                                                             </td>
                                                             <td>
-                                                                <div class="item-title">เพิ่มผู้ติดตาม Instagram</div>
+                                                                <span class="item-amount">1,090.00</span>
                                                             </td>
-                                                            <td>
-                                                                <span class="item-amount">390</span>
-                                                            </td>
-                                                            <td class="text-right">
-                                                                <a class="btn_radius btn btn-white btn-sm" href="service_detail.html"><img class="w-20 mar-ri-10" src="image/icon/loading.png"><b>รอดำเนินการ</b> </a>
-                                                                <a class="btn_radius btn btn-raised btn-sm btn-wave red text-white">ยกเลิกคำสั่งซื้อ</a>
-                                                            </td>
+                                                            
                                                         </tr>
                                                         <tr class=" v-middle" data-id="9">
                                                             <td>
-                                                                <span class="item-amount">24/05/65</span>
+                                                                <span class="item-amount">24/05/65 (12:27:15)</span>
                                                             </td>
                                                             <td>
                                                                 <span class="item-amount">3281204</span>
                                                             </td>
                                                             <td>
-                                                                <span class="item-amount">4003</span>
+                                                                <div class="item-title">บัตรเดบิต / เดบิต</div>
                                                             </td>
                                                             <td>
-                                                                <div class="item-title">เพิ่มผู้ติดตาม Instagram</div>
+                                                                <span class="item-amount">5,000.00</span>
                                                             </td>
-                                                            <td>
-                                                                <span class="item-amount">390</span>
-                                                            </td>
-                                                            <td class="text-right">
-                                                                <a class="btn_radius btn btn-white btn-sm" href="service_detail.html"><img class="w-20 mar-ri-10" src="image/icon/loading.png"><b>รอดำเนินการ</b> </a>
-                                                                <a class="btn_radius btn btn-raised btn-sm btn-wave red text-white">ยกเลิกคำสั่งซื้อ</a>
-                                                            </td>
+                                                            
                                                         </tr>
                                                         <tr class=" v-middle" data-id="9">
                                                             <td>
-                                                                <span class="item-amount">24/05/65</span>
+                                                                <span class="item-amount">24/05/65 (12:27:15)</span>
                                                             </td>
                                                             <td>
                                                                 <span class="item-amount">3281204</span>
                                                             </td>
                                                             <td>
-                                                                <span class="item-amount">4003</span>
+                                                                <div class="item-title">โอนเงิน (สแกน QR Code)</div>
                                                             </td>
                                                             <td>
-                                                                <div class="item-title">เพิ่มผู้ติดตาม Instagram</div>
+                                                                <span class="item-amount">1,500.00</span>
                                                             </td>
-                                                            <td>
-                                                                <span class="item-amount">390</span>
-                                                            </td>
-                                                            <td class="text-right">
-                                                                <a class="btn_radius btn btn-white btn-sm" href="service_detail.html"><img class="w-20 mar-ri-10" src="image/icon/loading.png"><b>รอดำเนินการ</b> </a>
-                                                                <a class="btn_radius btn btn-raised btn-sm btn-wave red text-white">ยกเลิกคำสั่งซื้อ</a>
-                                                            </td>
+                                                            
                                                         </tr>
                                                         <tr class=" v-middle" data-id="9">
                                                             <td>
-                                                                <span class="item-amount">24/05/65</span>
+                                                                <span class="item-amount">24/05/65 (12:27:15)</span>
                                                             </td>
                                                             <td>
                                                                 <span class="item-amount">3281204</span>
                                                             </td>
                                                             <td>
-                                                                <span class="item-amount">4003</span>
+                                                                <div class="item-title">โอนเงิน (สแกน QR Code)</div>
                                                             </td>
                                                             <td>
-                                                                <div class="item-title">เพิ่มผู้ติดตาม Instagram</div>
+                                                                <span class="item-amount">390.00</span>
                                                             </td>
-                                                            <td>
-                                                                <span class="item-amount">390</span>
-                                                            </td>
-                                                            <td class="text-right">
-                                                                <a class="btn_radius btn btn-white btn-sm" href="service_detail.html"><img class="w-20 mar-ri-10" src="image/icon/loading.png"><b>รอดำเนินการ</b> </a>
-                                                                <a class="btn_radius btn btn-raised btn-sm btn-wave red text-white">ยกเลิกคำสั่งซื้อ</a>
-                                                            </td>
+                                                            
                                                         </tr>
-                                                       
+                                                        <tr class=" v-middle" data-id="9">
+                                                            <td>
+                                                                <span class="item-amount">24/05/65 (12:27:15)</span>
+                                                            </td>
+                                                            <td>
+                                                                <span class="item-amount">3281204</span>
+                                                            </td>
+                                                            <td>
+                                                                <div class="item-title">ทรูมันนี่ วอลเล็ท</div>
+                                                            </td>
+                                                            <td>
+                                                                <span class="item-amount">1,090.00</span>
+                                                            </td>
+                                                            
+                                                        </tr>
+                                                        <tr class=" v-middle" data-id="9">
+                                                            <td>
+                                                                <span class="item-amount">24/05/65 (12:27:15)</span>
+                                                            </td>
+                                                            <td>
+                                                                <span class="item-amount">3281204</span>
+                                                            </td>
+                                                            <td>
+                                                                <div class="item-title">บัตรเดบิต / เดบิต</div>
+                                                            </td>
+                                                            <td>
+                                                                <span class="item-amount">5,000.00</span>
+                                                            </td>
+                                                            
+                                                        </tr>
+                                                        <tr class=" v-middle" data-id="9">
+                                                            <td>
+                                                                <span class="item-amount">24/05/65 (12:27:15)</span>
+                                                            </td>
+                                                            <td>
+                                                                <span class="item-amount">3281204</span>
+                                                            </td>
+                                                            <td>
+                                                                <div class="item-title">โอนเงิน (สแกน QR Code)</div>
+                                                            </td>
+                                                            <td>
+                                                                <span class="item-amount">1,500.00</span>
+                                                            </td>
+                                                            
+                                                        </tr>
                                                         
                                                     </tbody>
                                                 </table>
@@ -364,6 +369,7 @@
                                                 </ul>
                                                 <small class="text-muted py-2 mx-2">Total <span id="count">15</span> items</small>
                                             </div>
+                                            
 
                                         </div>
                                     </div>
@@ -385,6 +391,10 @@
                 </div>
             </div>
             <!-- ############ Footer END-->
+
+          
+            
+
         </div>
         <!-- build:js assets/js/site.min.js -->
         <!-- jQuery -->
@@ -393,12 +403,9 @@
         <script src="libs/popper.js/dist/umd/popper.min.js"></script>
         <script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
         <!-- ajax page -->
-        <script src="libs/pjax/pjax.min.js"></script>
-        <script src="assets/js/ajax.js"></script>
+      
         <!-- lazyload plugin -->
-        <script src="assets/js/lazyload.config.js"></script>
-        <script src="assets/js/lazyload.js"></script>
-        <script src="assets/js/plugin.js"></script>
+
         <!-- scrollreveal -->
         <script src="libs/scrollreveal/dist/scrollreveal.min.js"></script>
         <!-- feathericon -->
@@ -408,5 +415,8 @@
         <script src="assets/js/theme.js"></script>
         <script src="assets/js/utils.js"></script>
         <!-- endbuild -->
+        <script src="assets/js/custom-selectbox.js"></script>
+
+        
     </body>
 </html>

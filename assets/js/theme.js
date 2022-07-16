@@ -136,7 +136,7 @@
       // active nav item
       var url = window.location.pathname.split( '/' );
       if(url.length > 0) url = url[url.length - 1];
-      $('[data-nav]:not(.auto-nav) li.active').removeClass('active');
+     // $('[data-nav]:not(.auto-nav) li.active').removeClass('active');
       $('[data-nav]:not(.auto-nav) a').filter( function() {
         return url == $(this).attr('href') && $(this).attr('href') !=='#';
       }).parents('li').addClass( 'active' );

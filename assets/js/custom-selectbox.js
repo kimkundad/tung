@@ -27,18 +27,19 @@ jQuery.fn.extend({
 
     var getStorage = function () {
       var lastSelected = localStorage.getItem(extractText (prefix_class) + '-curr');
-  
+      
       if (lastSelected) {
         //find an item with value of lastSelected
         
         $(prefix_class +'-select-box').html(lastSelected + ' <i data-arrow="true" class="fa fa-angle-down"></i>');
         var val = $(prefix_class +'-select-box').find('[data-value]').data('value');
-        
+        val = 0;
+        console.log(val)
         $(defaultSelect).val(val);
       } else {
         $(prefix_class +'-select-box').html(optionArray[0] + ' <i data-arrow="true" class="fa fa-angle-down"></i>');
         var val = $(optionArray[0]).find('[data-value]').data('value');
-        
+        console.log('--->',val)
         $(defaultSelect).val(val);
       }
     };
@@ -158,8 +159,8 @@ jQuery.fn.extend({
       +'" alt="icon" data-value="'+ value +'"/>' 
       : '<i class="'+ icon 
       +'" data-value="'+ value +'"></i>';
-  
-      var item = '<li>'+ iconEl +' <span>'+ text +'</span></li>';
+      var inputt = '<input type="hidden" value="'+ value +'" id="get_id_first" name="myset">';
+      var item = '<li data-value="'+ value +'">'+ iconEl +' <span>'+ text +'</span>'+inputt+'</li>';
       optionArray.push(item);
     })
     
@@ -181,8 +182,10 @@ jQuery.fn.extend({
       +'" alt="icon" data-value="'+ value +'"/>' 
       : '<i class="'+ icon
       +'" data-value="'+ value +'"></i>';
+
+      var inputt = '<input type="hidden" value="'+ value +'" id="get_id_first" name="myset">';
   
-      var item = '<li>'+ iconEl + ' <span> ' + text + ' </span>' +'</li>';
+      var item = '<li data-value="'+ value +'">'+ iconEl + ' <span> ' + text + ' </span>' +inputt+'</li>';
   
       $(prefix_class +'-select-box').html(item + '<i data-arrow="true" class="fa fa-angle-down"></i>');
       

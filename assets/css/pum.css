@@ -194,6 +194,54 @@ b, strong {
     height: 45px;
     border-radius: 0.5rem;
 }
+.f-icon-true{
+    width: 35px !important;
+    height: auto;
+    padding-top: 5px;
+    margin-right: 10px;
+}
+.t-icon-true{
+    height: 50px !important;
+    width: auto;
+}
+.btn-md-kim{
+    padding: 8px 15px;
+    font-size: 18px;
+}
+.bg-orage{
+    background-color: #fd8304;
+    padding: 5px 1rem;
+}
+.back_icon_true{
+    color: #fff;
+    font-size: 18px;
+    padding-top: 15px;
+}
+.back_icon_true:hover{
+    color: #fff;
+    font-size: 18px;
+    padding-top: 15px;
+}
+.block_orage{
+    background-color: #fd8304;
+    color: #fff;
+}
+.block_orage:hover{
+    background-color: #fd8304;
+    color: #fff;
+}
+.modal_pad_kim{
+    padding-top: 50px;
+}
+.set_h_img{
+    max-height: 500px;
+}
+.line_bot{
+    border-bottom: 1px solid #ebebeb;
+}
+.pay_card{
+    height: 35px;
+}
 @media screen and (max-width: 775px) {
     .tb_btn {
         padding: 0.25rem 0.5rem;
