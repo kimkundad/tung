@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="assets/css/theme.css" type="text/css" />
         <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
         <link rel="stylesheet" href="assets/css/pum.css" type="text/css" />
+        <link rel="stylesheet" href="font-awesome/css/font-awesome.css" />
         <!-- endbuild -->
     </head>
     <body class="layout-row ">
@@ -99,6 +100,12 @@
                                     <span class="nav-text">ตั้งค่า</span>
                                 </a>
                             </li>
+                            <li>
+                                <a href="login.html" class="">
+                                    <span class="nav-icon text-primary"><img class="w-30 " src="image/icon_2/log-out.png"></span>
+                                    <span class="nav-text">ออกจากระบบ</span>
+                                </a>
+                            </li>
                         </ul>
                        <br>
                     </div>
@@ -132,14 +139,16 @@
                             </div>
                         </li>
                         <li class="nav-item dropdown d-none d-sm-block">
-                            <div class="alert_nav alert alert-light alert-dismissible fade show" role="alert" >
-                                <div class="d-flex">
-                                    <span><img class="w-30 " src="image/icon_2/wallet.png"></span>
-                                    <div class="mx-3 hi-30">
-                                        <small class="nav_item_new_price2">เติมปัง</small> 
+                            <a href="wallet.html">
+                                <div class="alert_nav alert alert-light alert-dismissible fade show" role="alert" >
+                                    <div class="d-flex">
+                                        <span><img class="w-30 " src="image/icon_2/wallet.png"></span>
+                                        <div class="mx-3 hi-30">
+                                            <small class="nav_item_new_price2">เติมปัง</small> 
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            </a>
                         </li>
                         <!-- User dropdown menu -->
                         <li class="nav-item dropdown text-center">
@@ -157,7 +166,7 @@
                         
                         <li class="nav-item d-lg-none">
                             <a class="nav-link px-1" data-toggle="modal" data-target="#aside">
-                                <i data-feather="menu"></i>
+                                <i class="fa fa-bars" aria-hidden="true"></i>
                             </a>
                         </li>
                     </ul>
