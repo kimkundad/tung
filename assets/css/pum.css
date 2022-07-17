@@ -19,6 +19,10 @@ h1, h2, h3, h4, h5, h6, b, strong {
     font-family: 'DB Adman X Bd', sans-serif;
 
 }
+.f-22{
+    font-size: 22px;
+    line-height: 15px;
+}
 .btn-pum {
     font-weight: 700;
     color: #000000;
