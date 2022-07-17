@@ -1,11 +1,39 @@
+@font-face {
+    font-family: 'DB Adman X';
+    src: url('DB Adman X.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'DB Adman X Bd';
+    src: url('DB Adman X Bd.ttf') format('truetype');
+    font-weight:bold;
+    font-style:normal;
+}
+
+body, body {
+    font-family: 'DB Adman X', sans-serif;
+    font-size: 18px;
+}
+h1, h2, h3, h4, h5, h6, b, strong {
+    font-family: 'DB Adman X Bd', sans-serif;
+
+}
 .btn-pum {
+    font-weight: 700;
     color: #000000;
     background-color: #ffd855;
     border-color: #edc84d;
 }
+.accordion-toggle{
+    font-size: 18px;
+}
 .ui-check input:checked + i {
     background-color: #edc84d;
     box-shadow: none;
+}
+.table > thead > tr > th{
+    font-size: 16px;
 }
 /* ffb200 */
 .form-control:focus {
@@ -80,14 +108,14 @@ b, strong {
 }
 .nav_item_new{
     display: block;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 400;
 }
 .nav_item_new_price{
     position: relative;
-    top: -5px;
+    top: -12px;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 18px;
 }
 .nav_item_new_price2{
     position: relative;
@@ -109,7 +137,7 @@ b, strong {
     padding-bottom: 5px;
 }
 .small_text_index{
-    font-size: 16px;
+    font-size: 22px;
     color: #000000;
 }
 .mar-ri-10{
@@ -275,7 +303,7 @@ b, strong {
     text-transform: uppercase !important;
 }
  .line-thru:before {
-    background-color: #FFF;
+    background-color: #f9f9fa;
     content: '';
     height: 10px;
     left: 50%;
@@ -289,7 +317,7 @@ b, strong {
     color: rgb(0, 0, 0);
     position: relative;
     z-index: 3;
-    font-size: 16px;
+    font-size: 20px;
 }
 .line-thru:after {
     border-bottom: 1px solid #040404;
@@ -300,6 +328,18 @@ b, strong {
     top: 47%;
     width: 100%;
     z-index: 1;
+}
+h5, .h5 {
+    font-size: 22px;
+}
+small {
+    font-size: 18px;
+}
+label{
+    font-size: 18px;
+}
+.nav-text{
+    font-size: 20px;
 }
 .w-xl {
     width: 380px;
@@ -320,6 +360,15 @@ b, strong {
 .get_pad_r_l{
     padding-right: 15px;
     padding-left: 15px;
+}
+.btn{
+    font-size: 16px;
+}
+.form-control{
+    font-size: 16px;
+}
+.text-md{
+    font-size: 26px;
 }
 /* background: #ffd855; */
 @media screen and (max-width: 775px) {
